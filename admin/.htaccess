@@ -1,0 +1,12 @@
+
+RewriteEngine On
+
+RewriteBase /primeclient/admin/
+
+RewriteRule ^index\.php$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule . /primeclient/admin/index.php [L]
